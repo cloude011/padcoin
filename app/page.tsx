@@ -23,7 +23,7 @@ function Logo({ pad, large = false }: { pad: Pad; large?: boolean }) {
   return <span className={`sprite-shell ${large ? "large" : ""}`} aria-hidden="true"><span className="sprite" style={{ backgroundPosition: `${-(x - 8)}px ${-(y - 8)}px` }} /></span>;
 }
 function Wordmark() {
-  return <span className="wordmark"><img src="/assets/padcoin-wordmark.png" alt="PADCOIN" width="180" height="180" /></span>;
+  return <span className="wordmark wordmark-v2"><img src="/assets/padcoin-wordmark-purple.png" alt="PADCOIN" width="720" height="128" /></span>;
 }
 function localDate(timestamp: number) {
   if (Date.now() - timestamp < 60000) return "just now";

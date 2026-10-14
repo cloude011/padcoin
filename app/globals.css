@@ -100,3 +100,7 @@
 @keyframes bg-float{0%,100%{transform:translate(-50%,-50%) rotate(-3deg)}50%{transform:translate(-50%,-53%) rotate(3deg)}}
 @media (prefers-reduced-motion:reduce){.bg-fx *,.bg-fx *::after{animation:none!important}}
 @media (max-width:700px){.bg-face{width:88vw;opacity:.09}.bg-pattern{opacity:.1}}
+
+/* New purple PADCOIN wordmark */
+.wordmark.wordmark-v2{height:auto;overflow:visible}
+.wordmark.wordmark-v2 img{width:100%;height:auto;transform:none;filter:drop-shadow(0 0 10px #b370ff40);mix-blend-mode:normal}
