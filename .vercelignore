@@ -1,0 +1,14 @@
+node_modules
+.next
+.git
+.sites-runtime
+.env*
+*.db
+*.db-shm
+*.db-wal
+*.tsbuildinfo
+tests
+START-HERE.html
+deploy.sh
+deploy.cmd
+README.md
