@@ -74,3 +74,15 @@
 @media(max-width:900px){.machine-stage{max-width:126%}.hero-floater{gap:5px;font-size:8px;padding:7px 8px}.hero-floater .pad-logo{width:19px;height:19px}.hero-floater .clank-logo{--logo-size:19px}.hero-floater>i{margin-left:3px;font-size:10px}.motion-toggle{top:22px;left:0;font-size:7px;padding:7px 8px}}
 @media(max-width:650px){.machine-stage{width:310px;max-width:95%}.motion-toggle{top:7px;left:0;font-size:7px}.floater-flap{top:27%;left:0}.floater-bags{top:38%;right:0}.floater-clank{right:2px;bottom:19%}.heat-burst>span{font-size:8px;top:40px;right:13px}.heat-burst>svg{bottom:23px}}
 @media(prefers-reduced-motion:reduce){.machine-stage{transform:none!important;transition:none!important}.heat-burst,.roast-card.heating:after{display:none!important}}
+
+/* Clank face watermark behind the whole page */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:url('/assets/clank-face.png') center 58%/min(78vw,780px) no-repeat;opacity:.07}
+/* $PAD launch banner */
+.launch-banner{background:linear-gradient(90deg,#7c3aed,#b370ff 50%,#7c3aed);color:#120f12;border-bottom:1px solid #c7b3ff}
+.launch-banner-inner{max-width:1400px;margin:auto;min-height:40px;padding:8px 20px;display:flex;align-items:center;justify-content:center;gap:12px;font:600 13px/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;text-align:center}
+.launch-banner strong{font-weight:800;color:#0b070d}
+.launch-banner img{width:22px;height:22px;flex-shrink:0;animation:banner-bob 2.4s ease-in-out infinite}
+.launch-banner-mirror{animation-delay:-1.2s!important}
+@keyframes banner-bob{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-2px) rotate(6deg)}}
+@media (prefers-reduced-motion:reduce){.launch-banner img{animation:none}}
+@media (max-width:560px){.launch-banner-inner{font-size:11px;letter-spacing:.08em;gap:8px}.launch-banner img{width:18px;height:18px}}

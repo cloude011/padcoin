@@ -193,6 +193,7 @@ export default function Home() {
 
   return <>
     <a className="skip-link" href="#board">Skip to the roast board</a>
+    <div className="launch-banner" role="note"><div className="launch-banner-inner"><img src="/assets/clank-face.png" alt="" width="22" height="22" /><span><strong>$PAD</strong> is coming on <strong>Clanktrade</strong></span><img src="/assets/clank-face.png" alt="" width="22" height="22" className="launch-banner-mirror" /></div></div>
     <header className="site-header">
       <div className="header-inner">
         <a href="#home" className="brand" aria-label="PADCOIN home"><Wordmark /></a>
